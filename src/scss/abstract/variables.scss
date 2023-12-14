@@ -1,0 +1,45 @@
+/* HEADING XL */
+
+$headingXL:'Big Shoulders Text', sans-serif;
+$fontSize: 6rem;
+$fontWeight:900;
+
+
+$claseXl:  normal  $fontWeight $fontSize  $headingXL;
+/* FIN HEADING XL */
+
+/* HEADING L */
+
+
+$fontSize:4.375rem;
+
+$claseL: normal $fontWeight $fontSize $headingXL;
+
+/* FIN  HEADING L */
+
+/* HEADING M */
+$fontSize:3.75rem;
+$claseM: normal $fontWeight $fontSize $headingXL;
+
+/* FIN HEADING M */
+
+/* HEADING S */
+
+$fontSize: 1rem;
+$fontWeight:900;
+$claseS: normal $fontWeight $fontSize $headingXL;
+
+/* FIN HEADING S */
+
+/* BODY M */
+
+$fontBodyM:'Outfit', sans-serif;
+$fw:300;
+$fz: 1.375rem;
+
+$bodyM: normal $fw $fz $fontBodyM;
+
+/* BODY S */
+
+$fz:1.125rem;
+$bodyS: normal $fw $fz $fontBodyM;

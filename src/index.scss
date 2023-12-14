@@ -1,0 +1,36 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;padding: 0;
+}
+
+img, video, iframe {
+
+    max-inline-size: 100%;
+    block-size: auto;
+
+}
+
+.container {
+
+    width: min(1440px, calc(100% - 2rem));
+    margin-inline: auto;
+
+}
+
+
+////CONTAINER-QUERIES///////
+
+.tablet {
+
+  container-type: inline-size;
+  container-name: tablet desktop;
+
+}
+

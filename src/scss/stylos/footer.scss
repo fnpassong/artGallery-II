@@ -1,0 +1,61 @@
+@use '../abstract/' as *;
+
+
+.footer {
+    background-color: $clr-dark;
+    padding: 48px 32px;
+
+    &__paragraph {
+
+        color: $clr-white;
+        margin-block: 2.375rem;
+        font-family: $fontBodyM;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        font-weight: 300;
+
+    }
+
+    &__icon > *:not(:last-child) {
+        margin-inline-end: 15px;
+    }
+
+} 
+
+@container tablet (min-width:47.5rem) {
+
+    .footer {
+
+        &__wrapper {
+            display: flex;
+            align-items:flex-start;
+            justify-content: space-between;
+        }
+
+        &__paragraph {
+            width: 17.5625rem;
+            margin-block: 0;
+        }
+    }
+
+}
+
+@container desktop (min-width:56.25rem) {
+
+    .footer {
+
+        &__wrapper {
+
+            max-width: 1210px;
+            margin-inline: auto;
+
+        }
+
+        &__paragraph {
+            width: 430px;
+            font-size: 1.125rem;
+        }
+
+    }
+
+}

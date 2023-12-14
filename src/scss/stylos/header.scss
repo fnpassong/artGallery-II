@@ -1,0 +1,148 @@
+@use '../abstract/' as *;
+
+
+.art {
+  
+    &__pic {
+        
+        background-image: url(../../assets/mobile/image-hero.jpg);
+        height: 15rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+
+    }
+
+    &__title {
+        font-family: $headingXL;
+        font-size: clamp(3.75rem, 4vw + 2rem, 6rem);
+        line-height: 55px;
+        text-transform: uppercase;
+
+        margin-block: 2rem;
+    }
+
+    &__paragraph {
+        font-family: $fontBodyM;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    &__btn  {
+        margin-top: 2rem;
+        display: flex;
+    }
+
+    &__btn img {
+        padding: 1.5rem 2rem;
+       
+        background-color: $clr-primary;
+    }
+
+
+}
+
+
+@container tablet (min-width:47.5rem) {
+    .art {
+
+        position: relative;
+
+        &__title {
+            color: #000;
+            width: 21.1875rem;
+            line-height: 65px;
+            margin-bottom: 0;
+
+            span {
+                display: block;
+            }
+            
+        }
+
+        &__paragraph {
+            width: 21.1875rem;
+            margin-block: 48px;
+            
+        }
+
+        &__pic {
+
+            background-image: url(../../assets/tablet/image-hero.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 43.75rem;
+            width: 27.3125rem;
+        }
+
+        &__text {
+            
+            position: absolute;
+            top: 15%;
+            left: 50%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btn  {
+                   
+           margin-top: 0;
+        }
+
+       
+    }
+   
+
+}
+
+@container desktop (min-width:56.25rem) {
+    .art {
+
+        &__back {
+            display: flex;
+        }
+       
+        &__dark {
+           
+          
+            min-width:28.125rem;
+            min-height: 49.9375rem; 
+            background-color: black;
+        }
+
+        &__pic {
+            background-image: url(../../assets/desktop/image-hero.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 540px;
+            height: 800px;
+
+
+        }
+
+        &__title {
+            color:$clr-white;
+            position: absolute; 
+            left:-550px;
+            line-height: 88px;
+            width: 32.125rem;
+            mix-blend-mode: difference;
+
+        }
+
+        &__paragraph {
+            font-size: 1.375rem;
+            line-height: 2rem;
+            margin-left: 200px;
+        }
+
+        &__btn {
+            margin-left: 200px;
+        }
+
+       
+    }
+}
