@@ -126,6 +126,10 @@
 
     .location {
 
+        &__wrapper {
+            background-image: url(../../assets/desktop/image-map.png);
+        }
+
         &__btn {
             max-width: 1210px;
             margin-inline: auto;
